@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cryptosi.dao/sitemap.xml
+
+# Block common non-content paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /images/favicons/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow specific API endpoints for public data
+Allow: /api/og-image
+Allow: /api/metadata
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Special rules for specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterest
+Allow: /

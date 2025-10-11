@@ -1,0 +1,81 @@
+{
+  "name": "CryptoSI DAO Hub",
+  "short_name": "CryptoSI DAO",
+  "description": "The central hub for the CryptoSI Decentralized Autonomous Organization, featuring dApp portfolio, governance, financial reporting, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["finance", "business", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "/images/screenshots/desktop-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "CryptoSI DAO Hub on desktop"
+    },
+    {
+      "src": "/images/screenshots/mobile-home.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "CryptoSI DAO Hub on mobile"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/images/favicons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "Explore CryptoSI DAO projects",
+      "url": "/ideas",
+      "icons": [
+        {
+          "src": "/images/icons/projects.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Governance",
+      "short_name": "Governance",
+      "description": "Participate in DAO governance",
+      "url": "https://app.aragon.org/dao/arbitrum-mainnet/0xA736319152057f9c3beb556EeE76Ea56598FFa13/proposals",
+      "icons": [
+        {
+          "src": "/images/icons/governance.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
