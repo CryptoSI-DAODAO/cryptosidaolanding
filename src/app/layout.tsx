@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
-import { SEO_CONFIG, ORG_SCHEMA, WEBSITE_SCHEMA } from '@/lib/seo-config';
+import { ORG_SCHEMA, WEBSITE_SCHEMA } from '@/lib/seo-config';
 
 export const metadata: Metadata = {
   title: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Add your Google verification code
+    google: process.env.GOOGLE_SITE_VERIFICATION || '',
   },
 };
 
@@ -64,10 +64,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/images/favicons/site.webmanifest" />
-        <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="msapplication-config" content="/images/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
