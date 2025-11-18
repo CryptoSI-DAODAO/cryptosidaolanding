@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ArrowUpRight, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowUpRight, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -85,6 +85,19 @@ export function PortfolioSection() {
             ))}
             </div>
         )}
+        
+        {/* Tracker Link - Always visible */}
+        <div className="flex justify-center mt-8">
+          <Link
+            href="https://tracker.cryptosidao.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium text-sm sm:text-base"
+          >
+            Track our projects as they're being developed here!
+            <ExternalLink className="w-4 h-4" />
+          </Link>
+        </div>
       </div>
     </section>
   );
